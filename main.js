@@ -6,14 +6,14 @@ const axios = require('axios');
 const HttpsProxyAgent = require('https-proxy-agent');
 const chalk = require('chalk');
 
-console.log(chalk.cyan.bold(`╔═╗╔═╦╗─╔╦═══╦═══╦═══╦═══╗`));
-console.log(chalk.cyan.bold(`╚╗╚╝╔╣║─║║╔══╣╔═╗║╔═╗║╔═╗║`));
-console.log(chalk.cyan.bold(`─╚╗╔╝║║─║║╚══╣║─╚╣║─║║║─║║`));
-console.log(chalk.cyan.bold(`─╔╝╚╗║║─║║╔══╣║╔═╣╚═╝║║─║║`));
-console.log(chalk.cyan.bold(`╔╝╔╗╚╣╚═╝║╚══╣╚╩═║╔═╗║╚═╝║`));
-console.log(chalk.cyan.bold(`╚═╝╚═╩═══╩═══╩═══╩╝─╚╩═══╝`));
+console.log(chalk.cyan.bold(`                 ╔═╗╔═╦╗─╔╦═══╦═══╦═══╦═══╗`));
+console.log(chalk.cyan.bold(`                 ╚╗╚╝╔╣║─║║╔══╣╔═╗║╔═╗║╔═╗║`));
+console.log(chalk.cyan.bold(`                 ─╚╗╔╝║║─║║╚══╣║─╚╣║─║║║─║║`));
+console.log(chalk.cyan.bold(`                 ─╔╝╚╗║║─║║╔══╣║╔═╣╚═╝║║─║║`));
+console.log(chalk.cyan.bold(`                 ╔╝╔╗╚╣╚═╝║╚══╣╚╩═║╔═╗║╚═╝║`));
+console.log(chalk.cyan.bold(`                 ╚═╝╚═╩═══╩═══╩═══╩╝─╚╩═══╝`));
 console.log(chalk.cyan.bold(`                 运行Teneo Node BETA CLI版本                 `));
-console.log(chalk.cyan.bold(`                推特用户雪糕战神@Hy78516012                `));
+console.log(chalk.cyan.bold(`                 推特用户雪糕战神 @Hy78516012                `));
 
 
 let socket = null;
