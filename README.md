@@ -1,49 +1,45 @@
 # ᝰ.ᐟ TENEO-NODE
 
-Running Teneo Node BETA, CLI Version. <br>
-Teneo Is an Browser extension Node Based. <br>
+运行 Teneo Node BETA，CLI 版本。<br>
+Teneo 是一个基于浏览器扩展的节点。<br>
 
 <img src="https://cdn.prod.website-files.com/665c71122bb2018f6ed3f9c9/66eaaf8660d0ba047f3f2058_screenshot.png" loading="lazy" width="266" height="Auto" alt="" srcset="https://cdn.prod.website-files.com/665c71122bb2018f6ed3f9c9/66eaaf8660d0ba047f3f2058_screenshot-p-500.png 500w, https://cdn.prod.website-files.com/665c71122bb2018f6ed3f9c9/66eaaf8660d0ba047f3f2058_screenshot.png 626w" sizes="(max-width: 479px) 100vw, (max-width: 991px) 33vw, 266px" class="image-32"> <br>
-Get paid in $TENEO Tokens for simply running a node that accesses public social media data. It’s easy, passive, and you earn from the value you contribute.
+通过运行一个访问公共社交媒体数据的节点，您可以获得 $TENEO 代币的报酬。这很简单，轻松，您可以从您所贡献的价值中获利。
 
+## 💡 如何注册
 
-
-## 💡 How To SignUp (Register)
-
-- **No Need Download the Extension you can register using script**
+- **无需下载扩展，您可以使用脚本注册**
 ![alt text](image.png)
 
+## 🚨 在运行 Teneo CLI 版本之前的注意事项
 
-## 🚨 Attention Before Running Teneo Cli Version
+我不对由于在 CLI 中运行节点而导致的账户被 `禁止` 的可能性负责，因为官方的 `Teneo Node Beta` 并未提供 CLI 版本的选项，只有 Chrome 扩展。不过我认为没有理由会禁止账户，因为这并不是作弊，我没有更改脚本中的任何内容（心跳 15 分钟，最大 teneo 点数 25，每天最大点数 2400）。
 
-I am not `responsible` for the possibility of an account being `banned`, due to running node in the CLI, because Officially `Teneo Node Beta` does not provide an option for the CLI version, only with the Chrome extension.
-but `I think` there is no reason to ban the account, because this is not cheating, I didn't change anything in the script (Heartbeats 15 minutes, maximum teneo points 25, maximum points per day 2400)
+## 📎 Teneo Node CLI 版本脚本功能
 
-## 📎 Teneo Node cli version Script features
-
-- Register
-- Login
-- Running Node
-- AutoLogin
-- AutoReconnect
+- 注册
+- 登录
+- 运行节点
+- 自动登录
+- 自动重连
 
 ![alt text](image-2.png)
 
-## 📌  ScreenShot Running With Javascript/NodeJs
+## 📌 运行时截图
 
 ![alt text](image-1.png)
 
-## ✎ᝰ. RUNNING 
-- Clone Repository
+## ✎ᝰ. 运行步骤
+- 克隆仓库
 ```bash
 git clone https://github.com/Zlkcyber/teneo-farm.git
 cd teneo-farm
 ```
-- Install Dependency
+- 安装依赖
 ```bash
 npm install
 ```
-- Run the script
+- 运行脚本
 ```bash
 node main.js
 ```

@@ -6,14 +6,14 @@ const axios = require('axios');
 const HttpsProxyAgent = require('https-proxy-agent');
 const chalk = require('chalk');
 
-console.log(chalk.cyan.bold(`╔═╗╔═╦╗─╔╦═══╦═══╦═══╦═══╗`));
-console.log(chalk.cyan.bold(`╚╗╚╝╔╣║─║║╔══╣╔═╗║╔═╗║╔═╗║`));
-console.log(chalk.cyan.bold(`─╚╗╔╝║║─║║╚══╣║─╚╣║─║║║─║║`));
-console.log(chalk.cyan.bold(`─╔╝╚╗║║─║║╔══╣║╔═╣╚═╝║║─║║`));
-console.log(chalk.cyan.bold(`╔╝╔╗╚╣╚═╝║╚══╣╚╩═║╔═╗║╚═╝║`));
-console.log(chalk.cyan.bold(`╚═╝╚═╩═══╩═══╩═══╩╝─╚╩═══╝`));
+console.log(chalk.cyan.bold(`                 ╔═╗╔═╦╗─╔╦═══╦═══╦═══╦═══╗`));
+console.log(chalk.cyan.bold(`                 ╚╗╚╝╔╣║─║║╔══╣╔═╗║╔═╗║╔═╗║`));
+console.log(chalk.cyan.bold(`                 ─╚╗╔╝║║─║║╚══╣║─╚╣║─║║║─║║`));
+console.log(chalk.cyan.bold(`                 ─╔╝╚╗║║─║║╔══╣║╔═╣╚═╝║║─║║`));
+console.log(chalk.cyan.bold(`                 ╔╝╔╗╚╣╚═╝║╚══╣╚╩═║╔═╗║╚═╝║`));
+console.log(chalk.cyan.bold(`                 ╚═╝╚═╩═══╩═══╩═══╩╝─╚╩═══╝`));
 console.log(chalk.cyan.bold(`                 运行Teneo Node BETA CLI版本                 `));
-console.log(chalk.cyan.bold(`                推特用户雪糕战神@Hy78516012                `));
+console.log(chalk.cyan.bold(`                 推特用户雪糕战神 @Hy78516012                `));
 
 
 let socket = null;
@@ -217,7 +217,7 @@ async function registerUser() {
 
   rl.question('请输入您的电子邮件: ', (email) => {
     rl.question('请输入您的密码: ', (password) => {
-      rl.question('请输入邀请者代码: ', async (invitedBy) => {
+      rl.question('请输入邀请者代码，可以填我的KWgDK送2500积分）: ', async (invitedBy) => {
         try {
           const response = await axios.post(signupUrl, {
             email: email,
@@ -233,7 +233,7 @@ async function registerUser() {
           }
         });
 
-          console.log('注册成功，请到邮箱里确认您的电子邮件：', email);
+          console.log('注册成功，请到您的邮箱里确认您的电子邮件：', email);
         } catch (error) {
           console.error('注册期间出错:', error.response ? error.response.data : error.message);
         } finally {
@@ -248,11 +248,11 @@ async function main() {
   const localStorageData = await getLocalStorage();
   let userId = localStorageData.userId;
 
-  rl.question('您是否要使用代理？（y/n）: ', async (useProxy) => {
+  rl.question('您是否要使用代理？（使用输入y/不使用输入n）: ', async (useProxy) => {
     let proxy = null;
     if (useProxy.toLowerCase() === 'y') {
       proxy = await new Promise((resolve) => {
-        rl.question('请输入您的代理URL（例如：http://username:password@host:port）: ', (inputProxy) => {
+        rl.question('请输入您的代理URL（例如：（http://或socks5://）username:password@host:port）: ', (inputProxy) => {
           resolve(inputProxy);
         });
       });
