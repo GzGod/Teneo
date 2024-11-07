@@ -32,7 +32,7 @@ Teneo 是一个基于浏览器扩展的节点。<br>
 - 克隆仓库
 ```bash
 git clone https://github.com/Gzgod/Teneo.git
-cd teneo-farm
+cd Teneo
 ```
 - 安装依赖
 ```bash
