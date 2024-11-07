@@ -6,6 +6,7 @@ const axios = require('axios');
 const HttpsProxyAgent = require('https-proxy-agent');
 const chalk = require('chalk');
 
+
 console.log(chalk.cyan.bold(`                 ╔═╗╔═╦╗─╔╦═══╦═══╦═══╦═══╗`));
 console.log(chalk.cyan.bold(`                 ╚╗╚╝╔╣║─║║╔══╣╔═╗║╔═╗║╔═╗║`));
 console.log(chalk.cyan.bold(`                 ─╚╗╔╝║║─║║╚══╣║─╚╣║─║║║─║║`));
@@ -14,7 +15,6 @@ console.log(chalk.cyan.bold(`                 ╔╝╔╗╚╣╚═╝║╚�
 console.log(chalk.cyan.bold(`                 ╚═╝╚═╩═══╩═══╩═══╩╝─╚╩═══╝`));
 console.log(chalk.cyan.bold(`                 运行Teneo Node BETA CLI版本                 `));
 console.log(chalk.cyan.bold(`                 推特用户雪糕战神 @Hy78516012                `));
-
 
 let socket = null;
 let pingInterval;
@@ -217,7 +217,7 @@ async function registerUser() {
 
   rl.question('请输入您的电子邮件: ', (email) => {
     rl.question('请输入您的密码: ', (password) => {
-      rl.question('请输入邀请者代码，可以填我的KWgDK送2500积分）: ', async (invitedBy) => {
+      rl.question('请输入邀请者代码，可以填我的KWgDK送2500积分: ', async (invitedBy) => {
         try {
           const response = await axios.post(signupUrl, {
             email: email,
@@ -252,7 +252,7 @@ async function main() {
     let proxy = null;
     if (useProxy.toLowerCase() === 'y') {
       proxy = await new Promise((resolve) => {
-        rl.question('请输入您的代理URL（例如：（http://或socks5://）username:password@host:port）: ', (inputProxy) => {
+        rl.question('请输入您的代理URL（例如：http://username:password@host:port）: ', (inputProxy) => {
           resolve(inputProxy);
         });
       });
