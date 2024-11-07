@@ -1,10 +1,9 @@
-# ᝰ.ᐟ TENEO-NODE
+# TENEO-NODE
 
 运行 Teneo Node BETA，CLI 版本。<br>
 Teneo 是一个基于浏览器扩展的节点。<br>
 
-<img src="https://cdn.prod.website-files.com/665c71122bb2018f6ed3f9c9/66eaaf8660d0ba047f3f2058_screenshot.png" loading="lazy" width="266" height="Auto" alt="" srcset="https://cdn.prod.website-files.com/665c71122bb2018f6ed3f9c9/66eaaf8660d0ba047f3f2058_screenshot-p-500.png 500w, https://cdn.prod.website-files.com/665c71122bb2018f6ed3f9c9/66eaaf8660d0ba047f3f2058_screenshot.png 626w" sizes="(max-width: 479px) 100vw, (max-width: 991px) 33vw, 266px" class="image-32"> <br>
-通过运行一个访问公共社交媒体数据的节点，您可以获得 $TENEO 代币的报酬。这很简单，轻松，您可以从您所贡献的价值中获利。
+通过运行一个访问公共社交媒体数据的节点，您可以获得 $TENEO 代币的报酬。。
 
 ## 💡 如何注册
 
@@ -32,7 +31,7 @@ Teneo 是一个基于浏览器扩展的节点。<br>
 ## ✎ᝰ. 运行步骤
 - 克隆仓库
 ```bash
-git clone https://github.com/Zlkcyber/teneo-farm.git
+git clone https://github.com/Gzgod/Teneo.git
 cd teneo-farm
 ```
 - 安装依赖
